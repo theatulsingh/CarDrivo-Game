@@ -112,7 +112,7 @@ function gameEnd(){
 	card.pause(); song=false;
 	player.start = false;
 	startsc.classList.remove('hide');
-	startsc.innerHTML="GAme Over <br> Your final score is : " + (player.score) +"<br> Press here to restart the game" ;
+	startsc.innerHTML="GAme Over <br> Your final score is : " + (Math.floor((player.score)/10)) +"<br> Press here to restart the game" ;
 }
 
 function changecar(int){
